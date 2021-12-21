@@ -1,0 +1,60 @@
+{
+  "name": "@sonnat/icons",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "version": "2.0.0-canary.0",
+  "repository": "git@github.com:sonnat/sonnat-icons.git",
+  "homepage": "https://www.sonnat.dev/docs/packages/icons",
+  "license": "MIT",
+  "sideEffects": false,
+  "keywords": [
+    "sonnat",
+    "icons",
+    "sonnat-icons",
+    "sonnat design system",
+    "design system",
+    "svg",
+    "svg icon",
+    "react component",
+    "react",
+    "svg react component"
+  ],
+  "peerDependencies": {
+    "@sonnat/ui": "^2.0.0-canary.0",
+    "react": "^17.0.2"
+  },
+  "scripts": {
+    "prebuild": "rimraf ./dist",
+    "postbuild": "yarn size:check",
+    "build": "npm-run-all build:cjs build:esm size:check",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.json",
+    "build:src": "node ./scripts/build-from-source.js",
+    "size:check": "node ./scripts/size-check.js"
+  },
+  "devDependencies": {
+    "@size-limit/file": "^7.0.4",
+    "@size-limit/webpack": "^7.0.4",
+    "@types/fs-extra": "^9.0.13",
+    "@types/mustache": "^4.1.2",
+    "@types/node": "^17.0.2",
+    "@types/react": "^17.0.37",
+    "@types/rimraf": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
+    "eslint": "^8.5.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "fast-glob": "^3.2.7",
+    "fs-extra": "^10.0.0",
+    "mustache": "^4.2.0",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "size-limit": "^7.0.4",
+    "typescript": "^4.5.4",
+    "yargs": "^17.3.0"
+  }
+}
