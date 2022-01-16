@@ -4,7 +4,7 @@
     "target": "ES5",
     "outDir": "./dist/esm",
     "lib": ["DOM.Iterable", "DOM", "ES2017"],
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "strictNullChecks": true,
     "esModuleInterop": true,
     "moduleResolution": "Node",
@@ -20,6 +20,6 @@
     "allowJs": true,
     "types": ["node", "react"]
   },
-  "exclude": ["dist", "node_modules"],
-  "include": ["src/**/*.ts", "src/**/*.tsx"]
+  "exclude": ["dist", "node_modules", "examples", "develop"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/typings/index.d.ts"]
 }

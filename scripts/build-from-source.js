@@ -47,7 +47,7 @@ function cleanPaths(data) {
   const trimedPaths = paths.trim();
 
   return (trimedPaths.match(/\/>/g) || []).length > 1
-    ? `<React.Fragment>${trimedPaths}</React.Fragment>`
+    ? `<>${trimedPaths}</>`
     : trimedPaths;
 }
 

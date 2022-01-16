@@ -21,21 +21,22 @@
     "svg react component"
   ],
   "peerDependencies": {
-    "@sonnat/ui": "^2.0.0-canary.0",
+    "@sonnat/ui": "^2.0.0-rc.2",
     "react": "^17.0.2"
   },
   "scripts": {
-    "prebuild": "rimraf ./dist",
-    "postbuild": "yarn size:check",
-    "build": "npm-run-all build:cjs build:esm size:check",
+    "prebuild": "rimraf dist",
+    "build": "npm-run-all build:cjs build:copy-typings:cjs build:esm build:copy-typings:esm build:minify build:packages build:npm-files",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:esm": "tsc -p tsconfig.json",
-    "build:src": "node ./scripts/build-from-source.js",
-    "size:check": "node ./scripts/size-check.js"
+    "build:copy-typings:cjs": "cp -r src/typings dist/typings",
+    "build:copy-typings:esm": "cp -r src/typings dist/esm/typings",
+    "build:packages": "node scripts/build-packages.js",
+    "build:npm-files": "node scripts/build-npm-files.js",
+    "build:minify": "node scripts/minify.js",
+    "build:src": "node ./scripts/build-from-source.js"
   },
   "devDependencies": {
-    "@size-limit/file": "^7.0.4",
-    "@size-limit/webpack": "^7.0.4",
     "@types/fs-extra": "^9.0.13",
     "@types/mustache": "^4.1.2",
     "@types/node": "^17.0.2",
@@ -51,10 +52,12 @@
     "fast-glob": "^3.2.7",
     "fs-extra": "^10.0.0",
     "mustache": "^4.2.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
-    "size-limit": "^7.0.4",
+    "terser": "^5.10.0",
     "typescript": "^4.5.4",
     "yargs": "^17.3.0"
-  }
+  },
+  "dependencies": {}
 }
