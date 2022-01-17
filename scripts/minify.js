@@ -18,5 +18,5 @@ const runMinify = async files => {
 };
 
 void (async () => {
-  await runMinify(await glob(path.join(buildPath, "**/*/*.js")));
+  await runMinify(await glob(path.join(buildPath, "**/*.js")));
 })();
