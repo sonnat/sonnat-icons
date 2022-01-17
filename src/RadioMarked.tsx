@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable import/no-unresolved */
-import MixerSettingsPaths from "./paths/MixerSettings";
+import RadioMarkedPaths from "./paths/RadioMarked";
 // @ts-ignore
 import createSvgIcon from "@sonnat/ui/utils/createSvgIcon";
 
-const MixerSettings = createSvgIcon(MixerSettingsPaths, "MixerSettings") as ReturnType<
+const RadioMarked = createSvgIcon(RadioMarkedPaths, "RadioMarked") as ReturnType<
   import("./typings").CreateSvgIcon
 >;
 
-export default MixerSettings;
+export default RadioMarked;

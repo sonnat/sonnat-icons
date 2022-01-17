@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable import/no-unresolved */
-import NightCircleOPaths from "./paths/NightCircleO";
+import WeatherNightOPaths from "./paths/WeatherNightO";
 // @ts-ignore
 import createSvgIcon from "@sonnat/ui/utils/createSvgIcon";
 
-const NightCircleO = createSvgIcon(NightCircleOPaths, "NightCircleO") as ReturnType<
+const WeatherNightO = createSvgIcon(WeatherNightOPaths, "WeatherNightO") as ReturnType<
   import("./typings").CreateSvgIcon
 >;
 
-export default NightCircleO;
+export default WeatherNightO;
