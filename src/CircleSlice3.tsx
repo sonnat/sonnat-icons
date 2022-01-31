@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable import/no-unresolved */
-import ZAxisRotateCounterclockwisePaths from "./paths/ZAxisRotateCounterclockwise";
+import CircleSlice3Paths from "./paths/CircleSlice3";
 // @ts-ignore
 import createSvgIcon from "@sonnat/ui/utils/createSvgIcon";
 
-const ZAxisRotateCounterclockwise = createSvgIcon(ZAxisRotateCounterclockwisePaths, "ZAxisRotateCounterclockwise") as ReturnType<
+const CircleSlice3 = createSvgIcon(CircleSlice3Paths, "CircleSlice3") as ReturnType<
   import("./typings").CreateSvgIcon
 >;
 
-export default ZAxisRotateCounterclockwise;
+export default CircleSlice3;

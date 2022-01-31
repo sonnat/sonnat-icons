@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable import/no-unresolved */
-import ZAxisRotateCounterclockwisePaths from "./paths/ZAxisRotateCounterclockwise";
+import SwapHorizontalSquarePaths from "./paths/SwapHorizontalSquare";
 // @ts-ignore
 import createSvgIcon from "@sonnat/ui/utils/createSvgIcon";
 
-const ZAxisRotateCounterclockwise = createSvgIcon(ZAxisRotateCounterclockwisePaths, "ZAxisRotateCounterclockwise") as ReturnType<
+const SwapHorizontalSquare = createSvgIcon(SwapHorizontalSquarePaths, "SwapHorizontalSquare") as ReturnType<
   import("./typings").CreateSvgIcon
 >;
 
-export default ZAxisRotateCounterclockwise;
+export default SwapHorizontalSquare;
