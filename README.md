@@ -12,7 +12,10 @@ The growing icon collection that allows designers and developers to use SVG Icon
 [![license](https://img.shields.io/github/license/sonnat/sonnat-icons?color=EE3F7C&style=for-the-badge)](https://github.com/sonnat/sonnat-icons/blob/main/LICENSE)
 [![npm latest package](https://img.shields.io/npm/v/@sonnat/icons?color=EE3F7C&style=for-the-badge)](https://www.npmjs.com/package/@sonnat/icons)
 [![npm downloads](https://img.shields.io/npm/dt/@sonnat/icons?color=EE3F7C&style=for-the-badge)](https://www.npmjs.com/package/@sonnat/icons)
-[![Follow us on Twitter](https://img.shields.io/twitter/follow/sonnatdesign?color=EE3F7C&label=follow%20us%20on%20twitter&style=for-the-badge)](https://twitter.com/sonnatdesign)
+[![Follow us on Twitter](https://img.shields.io/twitter/follow/sonnatdesign?color=EE3F7C&label=follow%20us%20on%20twitter&style=for-the-badge)](https://twitter.com/sonnatdesign)\
+![types](https://badgen.net/npm/types/@sonnat/icons?color=EE3F7C)
+![tree-shaking](https://badgen.net/bundlephobia/tree-shaking/@sonnat/icons?color=EE3F7C)
+![Min+Gzip](https://badgen.net/bundlephobia/minzip/@sonnat/icons?color=EE3F7C)
 
 </div>
 
