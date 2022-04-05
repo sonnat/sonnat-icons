@@ -1,0 +1,15 @@
+export default (
+  <><path d="M13 15H11V17H13V15Z" />
+<path d="M17 15H15V17H17V15Z" />
+<path d="M9 11H7V13H9V11Z" />
+<path d="M9 7H7V9H9V7Z" />
+<path d="M9 17V15H7C7 16.1 7.9 17 9 17Z" />
+<path d="M9 3C7.9 3 7 3.9 7 5H9V3Z" />
+<path d="M19 17C20.1 17 21 16.1 21 15H19V17Z" />
+<path d="M15 19H6C5.4 19 5 18.6 5 18V9C5 8.4 4.6 8 4 8C3.4 8 3 8.4 3 9V18C3 19.7 4.3 21 6 21H15C15.6 21 16 20.6 16 20C16 19.4 15.6 19 15 19Z" />
+<path d="M13 3H11V5H13V3Z" />
+<path d="M17 3H15V5H17V3Z" />
+<path d="M19 3V5H21C21 3.9 20.1 3 19 3Z" />
+<path d="M21 11H19V13H21V11Z" />
+<path d="M21 7H19V9H21V7Z" /></>
+);
